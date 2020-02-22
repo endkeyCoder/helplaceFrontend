@@ -1,0 +1,101 @@
+#sectionHome {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leftSideHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: x-large;
+    color: #fff;
+    text-shadow: 1px 1px rgba(123,104,238);
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftSideHome p{
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 6px rgba(0,0,0,0.2);
+    padding: 1em;
+    background-color: rgba(75,0,130,0.5);
+}
+
+.rightSideHome {
+    display: flex;
+    font-size: large;
+    padding: 1em;
+    color: #fff;
+    text-shadow: 1px 1px rgba(75,0,130);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+.rightSideHome form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(75,0,130,0.5);
+    height: 100%;
+}
+
+.formItemHome button{
+    border-radius: 20px;
+    border:0;
+    padding: 1em;
+    outline: 0;
+    background-color: #eee;
+    transition: background-color 2s;
+}
+
+.formItemHome button:hover{
+    cursor: pointer;
+    background-color:#bbb;
+}
+
+.formItemHome label{
+    font-weight: bold;
+}
+
+.formItemHome{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.formItemHome textarea{
+    outline: 0;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.inputGroupHome label{
+    font-weight: normal;
+}
+
+.inputGroupHome div{
+    display: flex;
+    
+    align-items: baseline;
+}
+
+@media(max-width: 850px){
+    #sectionHome{
+        flex-direction: column;
+    }
+    .leftSideHome{
+        width: 100%;
+    }
+
+    .rightSideHome{
+        display: block;
+        padding: 0;
+    }
+}

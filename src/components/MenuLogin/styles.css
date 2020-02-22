@@ -1,0 +1,71 @@
+.containerMenuLogin {
+    display: flex;
+    background-color: rgba(75, 0, 130);
+    color: #fff;
+    padding: 1em;
+    align-items: baseline;
+}
+
+.containerOptionsLogin {
+    display: flex;
+    flex: 1;
+}
+
+.MenuLoginHeader label {
+    font-weight: bolder;
+}
+
+.itemOptionsLogin{
+    margin-left: 1em;
+}
+
+.itemOptionsLogin button {
+    border-radius: 10px;
+    padding: 0.5em;
+    border: 0;
+    font-size: medium;
+    outline: 0;
+    color: #fff;
+}
+
+.btnLoginFacebook {
+    background-color: #3b5998;
+}
+
+.btnLoginGoogle{
+    background-color: #db4a39;
+    
+}
+
+.btnLoginGithub{
+    background-color: #1C1C1C;
+}
+.btnLoginTwitter{
+    background-color: #00acee;
+}
+
+.itemOptionsLogin button:hover {
+    cursor: pointer;
+   box-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+
+@media(max-width: 700px) {
+    .containerMenuLogin {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .containerOptionsLogin{
+        flex: 1;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .itemOptionsLogin{
+        margin-left: 0;
+    }
+
+    .itemOptionsLogin button{
+        margin-top: 0.5em;
+    }
+}
